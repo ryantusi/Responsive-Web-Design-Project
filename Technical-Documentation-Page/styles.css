@@ -1,0 +1,67 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+  
+  body{
+    background-color: #fffff0;
+    font-family: Times New Roman;
+    margin: 0;
+  }
+  
+  #navbar{
+    position: fixed;
+    text-align: center;
+    display: block;
+    border-right: 1.5px black solid;
+    width: 25%;
+    height: 100%;
+    padding: 20px 30px;
+    overflow: hidden;
+    float: left;
+  }
+
+  nav header h1{
+    font-weight: 500;
+    margin: 1.5em 1em; 
+    font-size: 30px;
+  }
+
+  a, nav ul li{
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+    text-align: left;
+    font-size: 20px;
+    margin: 2em 0em;
+  }
+
+  nav > ul > li:hover {
+    background-color: #dfdfe2;
+    color: #1b1b32;
+    cursor: pointer;
+  }
+
+  main{
+    position: absolute;
+    left: 35%;
+    padding: 0.5em;
+    overflow: hidden;
+  }
+
+  section p, section li{
+    margin-left: 1.5em 
+  }
+
+  .Code{
+    margin: 1em 2em;
+    background-color: #e2dccd;
+    padding: 10px;
+    height: 1.5em;
+    font-size: 1em;
+  }
+
+  .main-section{
+    margin-bottom: 2.5em;
+  }
