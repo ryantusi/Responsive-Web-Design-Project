@@ -1,0 +1,162 @@
+:root {
+    --red:rgb(225,40,70);
+    --black: linear-gradient(
+      45deg,
+      #333333 0%,
+      #333333 90%,
+      #4a4a4a
+    );
+    --blue: rgb(70, 80, 140);
+    --white: GhostWhite;
+  }
+
+  html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+  }
+
+  #navbar {
+    width: 100%;
+    height: 15%;
+    background: var(--red);
+    position: fixed;
+    top: -2%;
+    z-index: 1;
+  }
+
+  #navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2%;
+  }
+
+  #navbar ul li a {
+    text-decoration: none;
+    margin: 1.25rem;
+    color: var(--white);
+  }
+
+  main {
+    text-align: center;
+  }
+
+  #welcome-section {
+    background: var(--black);
+    color: var(--white);
+    width: 100vw;
+    height: 100vh;
+    font-size: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  #welcome-section p {
+    color: rgb(190,10,60);
+    margin-top: -6em;
+  }
+
+  #projects {
+    background: var(--blue);
+    width: 100vw;
+    height: 180vh;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #projects h1 {
+    font-size: 2rem;
+  }
+
+  .project-tiles {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 5%;
+    height: 50%;
+  }
+
+  .project-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+    margin: 0 1rem;
+    border: 2px solid gray;
+    background: var(--black)
+  }
+
+  .project-tile img {
+    width: 100%;
+    height: 80%;
+  }
+
+  .project-tile a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  #button {
+    background: var(--black);
+    width: 30%;
+    height: 5%;
+    color: var(--white);
+    cursor: pointer;
+  }
+
+  #button:hover {
+    background: var(--red);
+  }
+
+  #socials {
+    background: var(--black);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+    justify-content: space-evenly;
+    font-size: 150%;
+    border-bottom: 4px solid var(--red);
+  }
+
+  #profile {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+  }
+
+  #profile-link {
+    text-decoration: none;
+    color: inherit;
+    width: 40%;
+    padding: 0.5rem;
+  }
+
+  i {
+    font-size: 150%;
+  }
+
+  footer {
+    background: var(--black);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    color: var(--white);
+  }
+
+  @media (prefers-reduced-motion: no-preference)  {
+    *  {
+      scroll-behavior: smooth;
+    }
+  }
