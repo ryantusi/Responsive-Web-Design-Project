@@ -1,0 +1,166 @@
+:root {
+    --bgcolor: #eae9e9; 
+    --button: #ffb302;
+    --dark: #cccccc;
+}
+
+body {
+    background-color: var(--bgcolor);
+    font-family: Lato,sans-serif;
+}
+
+#header {
+    background-color: var(--bgcolor);
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: -1%;
+}
+
+#header-img {
+    width: 30vw;
+    margin: 5%;
+    padding-top: 1.5em;
+}
+
+#nav-bar  {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 10%;
+    padding-top: 1.5em;
+}
+
+#links {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+#links li {
+    margin: 0 2em; 
+}
+
+main {
+    padding: 10vw;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+#mail {
+    margin: 10vh 0;
+}
+
+form {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#email {
+    width: 100%;
+    height: 7vh;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+#submit {
+    width: 60%;
+    height: 8vh;
+    background-color: var(--button);
+    border: 0;
+    border-radius: 0.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#list {
+    margin: 15vh 5vh;
+}
+
+#list > ul {
+    list-style: none;
+    text-align: left;
+}
+
+#list > ul > li > p {
+    margin-top: -3vh;
+}
+
+#list > ul > li {
+    margin-bottom: 8vh;
+}
+
+iframe {
+    margin-bottom: 20vh;
+}
+
+#price {
+    margin: 0 auto;
+    z-index: -1;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15vh
+}
+
+#price > div {
+    border: 1px solid black;
+    width: 30%;
+    padding-bottom: 5vh;
+}
+
+.head {
+    background-color: var(--dark);
+    margin-top: 0;
+    padding: 3vh;
+    text-transform: uppercase;
+}
+
+#select {
+    background-color: var(--button);
+    border: 0;
+    width: 40%;
+    height: 10%;
+    border-radius: 0.2em;
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--dark);
+    margin-bottom: -4vh;
+    padding: 2vh
+}
+
+.address {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 4vh;
+}
+
+.address>li {
+    text-decoration: none;
+    color: inherit;
+    margin-right: 2vh;
+    cursor: pointer;
+}
+
+footer>p {
+    text-align: right;
+    margin-right: 6vh;
+}
+
+@media (prefers-reduced-motion: no-preference)  {
+    *  {
+      scroll-behavior: smooth;
+    }
+}
